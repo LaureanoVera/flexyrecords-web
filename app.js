@@ -1,11 +1,25 @@
-const express = require('express');
+const express = require("express");
 const app = express();
 const port = 3000;
 
-app.get('/', (req, res) => {
-  res.end('Start Proyect')
+// TEMPLATE ENGINE
+app.set("view engine", "ejs");
+app.set("views", __dirname + "/views");
+
+// STATICS
+app.use(express.static(__dirname + "/public"));
+
+// GET
+app.get("/", (req, res) => {
+  res.render("index");
+});
+
+// 404 ERROR
+app.use((req, res, next) => {
+  res.status(404).render('404')
 })
 
+// SERVER LISTEN
 app.listen(port, () => {
   console.log(`Server listening on port ${port}`);
-})
+});
