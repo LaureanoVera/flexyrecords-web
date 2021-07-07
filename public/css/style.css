@@ -1,0 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* HOME PAGE */
+.home {
+  background-color: #000;
+  width: 100vw;
+  height: 100vh;
+}
+
+.home__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home__logo {
+  margin: 0 auto;
+  height: 80vh;
+  filter: drop-shadow(0 0 3px #fff);
+}
+/* /HOME PAGE */
+
+/* 404 ERROR */
+.error {
+  background-color: #000;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.error__title {
+  color: #fff;
+}
+
+.error__sub {
+  color: #fff;
+}
+/* /404 ERROR */
