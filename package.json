@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.13.2"
+  },
+  "name": "flexyrecords-web",
+  "description": "",
+  "version": "1.0.0",
+  "main": "app.js",
+  "devDependencies": {
+    "nodemon": "^2.0.9"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LaureanoVera/flexyrecords-web.git"
+  },
+  "keywords": [],
+  "author": "LaureanoVera",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LaureanoVera/flexyrecords-web/issues"
+  },
+  "homepage": "https://github.com/LaureanoVera/flexyrecords-web#readme"
+}
