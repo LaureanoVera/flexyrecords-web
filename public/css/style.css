@@ -1,12 +1,13 @@
 :root {
   --primary-color: #fa00ffa0;
   --dark-color: #000;
+  --light-color: #eee;
 }
 
 * {
   padding: 0;
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /* HOME PAGE */
@@ -24,7 +25,7 @@
 .home__logo {
   margin: 0 auto;
   height: 80vh;
-  filter: drop-shadow(0 0 3px #fff);
+  animation: blink 6s infinite;
 }
 /* /HOME PAGE */
 
@@ -74,4 +75,25 @@
   top: 0;
   left: 0;
   right: 0;
+}
+
+@keyframes blink {
+  3%,
+  20%,
+  24%,
+  55% {
+    filter: drop-shadow(0 0 3px var(--primary-color));
+  }
+
+  0%,
+  5%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    filter: drop-shadow(0 0 3px var(--light-color));
+  }
 }
