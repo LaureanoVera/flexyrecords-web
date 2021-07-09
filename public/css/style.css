@@ -18,13 +18,14 @@
 
 .home__container {
   display: flex;
+  height: 80%;
   justify-content: center;
   align-items: center;
 }
 
 .home__logo {
   margin: 0 auto;
-  height: 80vh;
+  max-width: 520px;
 }
 /* /HOME PAGE */
 
@@ -67,7 +68,7 @@
   justify-content: center;
   align-items: center;
   grid-template-columns: repeat(4, 1fr);
-  gap: 1em .5em;
+  gap: 1em .7em;
 }
 /* /TEAM */
 
@@ -141,15 +142,21 @@
 }
 
 
-/* RESPONSIVE */
+/* QUERIES */
 @media screen and (max-width: 992px) {
   .team__container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
   .team__container {
     grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .home__logo {
+    max-width: 800px;
   }
 }
