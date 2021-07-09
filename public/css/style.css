@@ -37,19 +37,20 @@
   align-items: center;
   height: 100vh;
   width: 100vw;
-  background-color: var(--dark-color);
 }
 
 .error__title {
   color: var(--dark-color);
-  text-shadow: 0 0 5px var(--primary-color);
-  font-size: 3em;
+  text-shadow: 0 0 7px var(--primary-color),
+               0 0 4px var(--light-color),
+               0 0 2px var(--dark-color);
+  font-size: 5em;
   font-weight: 900;
 }
 
 .error__sub {
   color: var(--dark-color);
-  font-size: 2em;
+  font-size: 3.5em;
   font-weight: 500;
 }
 /* /404 ERROR */
@@ -60,7 +61,6 @@
 }
 
 .team__container {
-  background-color: var(--dark-color);
   margin: 0 auto;
   margin-top: 4em;
   height: calc(100vh - 4em);
@@ -71,7 +71,6 @@
   gap: 1em .7em;
 }
 /* /TEAM */
-
 
 /* ESTYLES GLOBAL */
 .btn-hover-flexy:hover {
@@ -97,7 +96,7 @@
 }
 
 .error-icon-flexy {
-  font-size: 3em;
+  font-size: 5em;
   color: var(--primary-color);
 }
 
@@ -119,6 +118,31 @@
   font-weight: 700;
 }
 
+.card-hover-flexy:hover {
+  box-shadow: 0 2px 8px var(--primary-color);
+}
+
+.mt-flexy {
+  margin-top: 4.2em;
+}
+
+.img-flexy {
+  height: 40vh;
+}
+
+.label-flexy {
+  color: var(--light-color);
+}
+
+.dark-bg-flexy{
+  opacity: .7;
+}
+.dark-bg-flexy:focus {
+  border: none;
+  outline: none;
+  background-color: var(--primary-color);
+  opacity: .4;
+}
 
 @keyframes blink {
   3%,

@@ -14,14 +14,18 @@ app.get("/", (req, res) => {
   res.render("index");
 });
 
-app.get('/team', (req, res) => {
-  res.render('team')
-})
+app.get("/team", (req, res) => {
+  res.render("team");
+});
+
+app.get("/contact", (req, res) => {
+  res.render("contact");
+});
 
 // 404 ERROR
 app.use((req, res, next) => {
-  res.status(404).render('404')
-})
+  res.status(404).render("404");
+});
 
 // SERVER LISTEN
 app.listen(port, () => {
