@@ -19,6 +19,7 @@ app.use(express.static(path.join(__dirname, "public")));
 
 // ROUTES
 app.use("/", require("./routes/Index"));
+app.use("/dev", require("./routes/Dev"));
 
 // 404 ERROR
 app.use((req, res, next) => {
