@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const { home, team, contact, services } = require("../controller/router_main");
+const { home, team, contact, services } = require("../controller/route_main");
 
 // ROUTES
 router.get("/", home);

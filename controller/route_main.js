@@ -1,3 +1,8 @@
+// MODEL DB
+const pool = require('../settings/db')
+
+// CONNECTION DB
+
 const home = (req, res) => {
   res.render("index");
 } 
