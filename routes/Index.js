@@ -1,21 +1,14 @@
 const express = require("express");
 const router = express.Router();
+const { home, team, contact, services } = require("../controller/router_main");
 
 // ROUTES
-router.get("/", (req, res) => {
-  res.render("index");
-});
+router.get("/", home);
 
-router.get("/team", (req, res) => {
-  res.render("team");
-});
+router.get("/team", team);
 
-router.get("/contact", (req, res) => {
-  res.render("contact");
-});
+router.get("/contact", contact);
 
-router.get("/services", (req, res) => {
-  res.render("services");
-});
+router.get("/services", services);
 
 module.exports = router;
