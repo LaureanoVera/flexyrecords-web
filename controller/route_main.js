@@ -1,8 +1,10 @@
 // MODEL DB
-const pool = require('../settings/db')
+const Member = require('../models/model_member')
 
 // CONNECTION DB
+const pool = require('../settings/db')
 
+// ROUTES
 const home = (req, res) => {
   res.render("index");
 } 
