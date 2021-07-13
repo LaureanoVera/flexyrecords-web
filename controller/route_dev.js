@@ -3,10 +3,9 @@ const mainDev = (req, res) => {
 }
 
 const dataDev =  (req, res) => {
-  res.render('meData')
+  res.render('me')
 }
 
 module.exports = {
-  mainDev,
-  dataDev,
+  mainDev
 }

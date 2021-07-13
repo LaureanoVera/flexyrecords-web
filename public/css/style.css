@@ -9,7 +9,6 @@
   padding: 0;
   margin: 0;
   font-family: "Roboto", sans-serif;
-  transition: .3s;
 }
 
 /* HOME PAGE */
@@ -220,6 +219,27 @@
 .img-profile-flexy:hover {
   box-shadow: 0 0 44px #14aafa;
   transform: rotate(360deg);
+}
+
+.move-flexy {
+  animation: move 9s infinite; 
+}
+
+@keyframes move {
+  20%,
+  40%,
+  60%,
+  80%,
+  100% {
+    transform: translateY(-.65em);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateY(.65em);
+  }
 }
 
 @keyframes blink {
