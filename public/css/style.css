@@ -9,6 +9,7 @@
   padding: 0;
   margin: 0;
   font-family: "Roboto", sans-serif;
+  transition: .3s;
 }
 
 /* HOME PAGE */
@@ -92,9 +93,18 @@
   padding-top: 2em;
   width: 100%;
   height: calc(100% - 2em);
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
+  gap: 3em;
+}
+
+.dev__info {
+  color: var(--light-color);
+}
+
+.dev__info i {
+  color: #14aafa;
 }
 /* /DEV */
 
@@ -179,6 +189,10 @@
   outline: none;
   background-color: var(--primary-color);
   opacity: 0.4;
+}
+
+.med-icon-flexy {
+  font-size: 2em;
 }
 
 .img-flexy {
