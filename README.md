@@ -1,5 +1,8 @@
 ## Musical Production
 # **Flexy Records**
+``` html
+🧛‍♂️ IGNORE: --> type <span> /dev <span> on end
+```
 ![Flexy Logo](public/img/logo.svg)
 > [Visit Here](https://flexyrecords-web.herokuapp.com/ 'Click!')
 ### Technologies:
@@ -10,6 +13,8 @@
 - Morgan
 - Body Parser
 - Ejs
+- Heroku
+- Bootstrap
 
 ```javascript
 // SERVER LISTEN
@@ -18,3 +23,5 @@ app.listen(port, () => {
 });
 
 ```
+
+> ### INCLUDE A EASTER EGG IN URL 🧛‍♂️
